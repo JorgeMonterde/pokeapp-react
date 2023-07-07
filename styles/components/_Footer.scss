@@ -1,0 +1,7 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+footer{
+    border-radius:$parents-border-radius;
+    background-color:antiquewhite;
+}

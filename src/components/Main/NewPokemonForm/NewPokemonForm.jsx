@@ -2,7 +2,9 @@ import React from "react";
 
 const NewPokemonForm = () => {
   return (
-  <section>NewPokemonForm</section>
+    <section className="new-pokemon-form">
+      NewPokemonForm
+    </section>
   );
 };
 

@@ -1,0 +1,24 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.search-form{
+    @include main-grandchildren;
+    padding: 0% 3% 3% 3%;
+    margin: 0%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &>.inputs-div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+        &>input{
+            
+        }
+    }
+
+}

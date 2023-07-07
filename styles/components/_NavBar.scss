@@ -1,0 +1,39 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+nav{
+    display: flex;
+    flex-direction: row;
+
+    height: 10%;
+    width: auto;
+    max-height: 10%;
+
+    padding:0;
+    margin:0;
+    min-width:200px;
+    
+
+    &>ul{
+        display: flex;
+        flex-direction: row;
+        justify-content:end;
+
+        flex-grow: 1;
+        list-style-type: none;
+
+        &>li{
+            /* display: flex;
+            flex-direction: row;
+            justify-content: space-between; */
+            width:auto;
+            padding-right: 20px;
+            &>a{
+                text-decoration: none;
+            }
+        }
+    }
+    
+
+
+}

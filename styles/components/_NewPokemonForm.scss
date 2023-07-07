@@ -1,0 +1,6 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.new-pokemon-form{
+    @include main-children;
+}

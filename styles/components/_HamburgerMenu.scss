@@ -1,0 +1,15 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.hamburger-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    height: 50px;
+
+    &>img{
+        max-width: 50px;
+        height: auto;
+        
+    }
+}

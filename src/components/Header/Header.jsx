@@ -1,11 +1,12 @@
 import React from "react";
+
 //import components
 import NavBar from "./NavBar/NavBar";
 
 const Header = () => {
   return (
     <header>
-      Header
+      <h1>PokeApp</h1>
       <NavBar />
 
     </header>

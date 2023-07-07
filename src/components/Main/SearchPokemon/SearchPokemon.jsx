@@ -1,14 +1,20 @@
-import React from "react";
+import React, {useContext} from "react";
 
 //import components
 import SearchForm from "./SearchForm/SearchForm";
 import PokemonList from "./PokemonList/PokemonList";
 
-const Search = () => {
+//contexts
+import { PokemonContext } from "../../../context/pokemonContext";
+
+const Search = (props) => {
+  const {pokemons, modifyPokemons} = useContext(PokemonContext);
+
+
   return (
-    <section>
-      <SearchForm />
-      <PokemonList />
+    <section className="search-pokemon">
+      <SearchForm modifyPokemons={modifyPokemons}/>
+      <PokemonList pokemons={pokemons}/>
     </section>
   );
 };

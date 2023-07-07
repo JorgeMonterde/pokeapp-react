@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+//import components
+import HamburgerMenu from "./HamburgerMenu/HamburgerMenu";
+
 const NavBar = () => {
   return (
   <nav >
@@ -9,6 +12,7 @@ const NavBar = () => {
       <li><Link className={"link"} to="/new">Create pokemon</Link></li>
       <li><Link className={"link"} to="/search">Search pokemon</Link></li>
     </ul>
+    <HamburgerMenu />
   </nav>
   );
 };

@@ -1,0 +1,16 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.pokemon-list{
+    @include main-grandchildren;
+    padding: 0% 3% 3% 3%;
+    margin: 0%;
+
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+
+    &>li{
+        @include main-great-grandchildren;
+    }
+
+}
