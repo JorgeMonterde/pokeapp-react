@@ -9,7 +9,7 @@ const Card = (props) => {
 
   const printTypes = () => info.types.map(type => {
     let key1 = uuidv4();
-    return <div className="type" key={key1}>{type}</div>
+    return <div className={`type ${type}`} key={key1}>{type}</div>
   })
 
   

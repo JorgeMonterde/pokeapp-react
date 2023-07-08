@@ -9,11 +9,12 @@ import { PokemonContext } from "../../../context/pokemonContext";
 
 const Search = (props) => {
   const {pokemons, modifyPokemons} = useContext(PokemonContext);
+  
 
 
   return (
     <section className="search-pokemon">
-      <SearchForm modifyPokemons={modifyPokemons}/>
+      <SearchForm pokemons={pokemons} modifyPokemons={modifyPokemons} />
       <PokemonList pokemons={pokemons}/>
     </section>
   );

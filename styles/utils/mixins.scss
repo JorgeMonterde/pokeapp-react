@@ -32,6 +32,41 @@
     align-items: center;
     padding: 0;
     margin: 2%;
-    border-radius: 12px;
-    background-color: rgb(163, 195, 197);
+    
 }
+
+/* @mixin type-tag{
+    $type-normal-color
+    $type-fighting-color
+    $type-flying-color
+    $type-poison-color
+    $type-ground-color
+    $type-rock-color
+    $type-bug-color
+    $type-ghost-color
+    $type-steel-color
+    $type-fire-color
+    $type-water-color
+    $type-grass-color
+    $type-electric-color
+    $type-psychic-color
+    $type-ice-color
+    $type-dragon-color
+    $type-dark-color
+    $type-fairy-color
+    $type-unknown-co
+    $type-shadow-color
+
+    &>.type .normal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin:3px;
+        padding:7px;
+        border-radius: 20px;
+        background-color: $type-normal-color;
+        color: white;
+    }
+    
+
+} */
