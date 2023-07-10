@@ -13,8 +13,8 @@ const PokemonList = (props) => {
   console.log("to print", pokemons)
 
   const handlePokemonInfo = (pokemon) => {
-    console.log("HEY",pokemon.name)
     return {
+      id:pokemon.id,
       name: firstLetterToUppercase(pokemon.name),
       img: pokemon.sprites.other["official-artwork"].front_default,
       thumbnail: pokemon.sprites.front_default,
@@ -35,37 +35,6 @@ const PokemonList = (props) => {
     }
   );
   
-
-
-/*   // print cards 
-  useEffect(() => {
-    let prevTimerId = timeoutId;
-    clearTimeout(prevTimerId);
-    let timerId = setTimeout(async () => {
-      const endpoints = filterNameStartingWith(pokemonEndPt, searchInput)
-      console.log(endpoints)
-      try {
-        if(endpoints[0]){
-          let pokemonsInfo = [];
-          for (let endpoint of endpoints){
-            const response = await axios.get(endpoint.url);
-            pokemonsInfo = response.data;
-            console.log("your pokemon info: ", pokemonsInfo);
-          }
-          modifyPokemons([pokemonsInfo]);
-        } else {
-          console.log("Waiting for input to search");
-        }
-          
-      } catch (error) {
-        console.error("Error: ", error);
-        setError(error.response.status);
-      }
-
-    }, 2500);
-    setTimeoutId(timerId)
-
-  }, [searchInput]); */
 
 
   return (

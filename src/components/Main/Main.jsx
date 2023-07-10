@@ -8,6 +8,9 @@ import Details from "./Details/Details";
 import SearchPokemon from "./SearchPokemon/SearchPokemon";
 
 const Main = () => {
+
+
+
   return (
     <main>
       <Routes>

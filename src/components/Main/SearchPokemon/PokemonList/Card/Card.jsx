@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 //util functions
 import { v4 as uuidv4 } from "uuid";
@@ -12,13 +13,15 @@ const Card = (props) => {
     return <div className={`type ${type}`} key={key1}>{type}</div>
   })
 
+
+
   
 
 
   return (
-    <article className="card">
+    <article className="card" >
       <div className="name-img">
-        <p>{info.name}</p>
+        <p><Link className="link" to={`/pokemon/${info.id}`}>{info.name}</Link></p>
         <img src={info.img} alt={info.name}/>
       </div>
       <div className="info">

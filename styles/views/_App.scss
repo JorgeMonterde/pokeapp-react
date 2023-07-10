@@ -39,6 +39,11 @@ h3{
     font-family: $titles-font;
 }
 
+h4{
+    font-family: $titles-font;
+    
+}
+
 p{
     font-family: $normal-font;
 }
@@ -47,4 +52,8 @@ input{
     border: $input-border-color solid 2px;
     border-radius: $input-border-radius;
     padding: 1%;
+}
+
+a{
+    text-decoration: none;
 }

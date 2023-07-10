@@ -35,6 +35,21 @@
     
 }
 
+@mixin required-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0%;
+    
+}
+
+@mixin card-controls{
+    background-color: rgb(163, 163, 163);
+
+}
+
 /* @mixin type-tag{
     $type-normal-color
     $type-fighting-color
